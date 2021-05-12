@@ -1,0 +1,5 @@
+Install Docker: https://docs.docker.com/engine/install/#server
+Install Minikube: https://minikube.sigs.k8s.io/docs/
+Install Kubectl : https://kubernetes.io/docs/tasks/tools/
+
+Once you installed all the tools, start docker and then minikube.
