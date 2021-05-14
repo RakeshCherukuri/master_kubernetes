@@ -1,0 +1,6 @@
+Namespace
+Pod - basic object in kubernetes.  a container resides in a pod. a pod can have multiple containers.
+Service - Kubernetes service provides a stable networking endpoint – a fixed IP, DNS, and port. Through a service, any pod can be added or removed without the fear that basic network information would change in any way.
+Replicaset: 
+Deployment: 
+statefulset: 
