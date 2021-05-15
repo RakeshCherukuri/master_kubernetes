@@ -1,0 +1,41 @@
+master node : here we have some components .api server,etcd,schedler,controller.
+worker node : here we have kubelet, kube proxy, container run times, nodes{pods,container}.
+
+what is cluster?
+a) multiple nodes machines we called as a cluster.
+what is minikube ?
+a) it is a single node cluster .i.e  means  it has only 1 node
+what is kubeadm ?
+a) it is a multiple node cluster . means it has multiple nodes.
+kubectl ?
+a) if u have cluster ,against the cluster  if u want to know pods or deployments or namspace information  using kubectl command we will know about cluster.
+   and if u want to create pods or something in cluster we can create using kubectl.
+   ex: kubectl get pods
+kubelet  ?
+a) it is running on each node . every node has kubelet. it talks with api server everytime. and if it get any request from api server it will deployed those request into the nodes.
+
+what is api server ?
+A) if u have certain requirement like create pods or some objects .we write a yml file .this file can  talks with api server only. FROM outside requriments talk only api server.
+
+what is etcd ?
+a) it is like a database .if u create anything thosse values stored in etcd.
+   if u do any updates it has stored those updates.
+   if u delete any anything it will delete in storeage.
+   
+ what is schedler ?
+ a) it is comminicate with api server every time and ask about did i get any updates or not. if it get updates those updates assinge in healthy nodes.
+   ex: if it get a request of 5 pods .it will not keep 5 pods in one node.it will check all nodes and space and all. then it will keep each pod into each node .
+    
+  wt is controller?
+  a) it has define some values about nodes ,pods,rs,namespaces,deployments information.
+  
+  wt is pod ?
+  a)it is smallest componets in k8s . we can run containers inside the pods .each pod can contains no.of containers like 1 or 2 or 3.
+  
+wt is services ?
+a) if u have 2 pods and 2 containers running .if u want to do some activities in containers  so , through the services will apply our activties .we write our actities on connatiner .
+
+wt is Kops ? 
+ it is k8s operation mangemets . it is acutal deployment in  origsation .it is running on aws cloud.
+ 
+ 
