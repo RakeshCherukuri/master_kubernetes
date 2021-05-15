@@ -37,5 +37,16 @@ a) if u have 2 pods and 2 containers running .if u want to do some activities in
 
 wt is Kops ? 
  it is k8s operation mangemets . it is acutal deployment in  origsation .it is running on aws cloud.
- 
- 
+  wt is repelic set ? 
+a) A ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time.it is often used to guarantee the availability of a specified number of identical Pods.
+    its like a auto scailing in aws.
+ wt is deployment ?
+ a) it is a resource object in Kubernetes that provides declarative updates to applications. A deployment allows you to describe an application’s life cycle, such as 
+   which images to use for the app, the number of pods there should be, and the way in which they should be updated.
+      a2) Deployments represent a set of multiple, identical Pods with no unique identities. A Deployment runs multiple replicas of your application and automatically replaces any instances that fail.
+   The Kubernetes deployment object lets you:
+      Deploy a replica set or pod
+     Update pods and replica sets
+      Rollback to previous deployment versions
+       Scale a deployment
+     Pause or continue a deployment
